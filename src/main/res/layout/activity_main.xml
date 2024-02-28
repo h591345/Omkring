@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Omkring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/omkring"
+        android:textColor="#090909"
+        android:textColorHint="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/omkring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_alignStart="@id/inputEpostLoggInn"
+            android:text="@string/logg_inn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputEpostLoggInn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/omkring"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:autofillHints="emailAddress" />
+
+        <EditText
+            android:id="@+id/inputPassordLoggInn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputEpostLoggInn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/Passord"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:autofillHints="password" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="215dp"
+            android:onClick="glemtPassord"
+            android:text="Tilbakestill passord" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loggInnButton"
+        android:layout_width="352dp"
+        android:layout_height="59dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="#F15E22"
+        android:text="@string/logg_inn"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="eller"/>
+
+    <TextView
+        android:id="@+id/nybruker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ny bruker?" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrer deg her."
+        android:textStyle="bold"
+        android:textColor="#0064FF"
+        android:onClick="registrer"/>
+
+</LinearLayout>

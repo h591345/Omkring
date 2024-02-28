@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:padding="20dp">
+
+    <TextView
+        android:text="@string/registrer_deg"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navn"
+        android:hint="Navn"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:autofillHints="fornavn"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/inputEpost"
+        android:hint="@string/Email"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:autofillHints="emailAddress" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/inputPassord"
+        android:hint="@string/Passord"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/inputBekreftPassord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputPassord"
+        android:layout_margin="10dp"
+        android:hint="Bekreft passord"
+        android:inputType="textPassword" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jeg_samtykker_villk_r_og_betingelser"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="25dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registrerButton"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:backgroundTint="#F15E22"
+        android:text="@string/registrer"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:cornerRadius="10dp" />
+
+
+
+</LinearLayout>
